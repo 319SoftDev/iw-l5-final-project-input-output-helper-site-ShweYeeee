@@ -61,3 +61,22 @@ contactus.addEventListener("click", function() {
 
 // Show the home page by default
 showPage("home-page");
+
+const more= document.querySelector("#more");
+const moreContent= document.querySelector("#more-content");
+
+const openmsg = () => {
+    moreContent.classList.remove("Hidden");
+   more.classList.toggle("Hidden");
+   less.classList.toggle("Hidden");
+}
+more.addEventListener("click", openmsg);
+
+const less= document.querySelector("#less");
+
+const closemsg = () => {
+    moreContent.classList.add("Hidden");
+   more.classList.remove("Hidden");
+    less.classList.toggle("Hidden");
+}
+less.addEventListener("click", closemsg);

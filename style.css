@@ -32,7 +32,6 @@ button:hover {
 nav {
     margin-bottom: 20px;
     text-align: center;
-    background-color: #a9cee7;
     padding: 10px;
 }
 nav a {
@@ -85,4 +84,64 @@ h2 {
     text-align: center;
     margin-bottom: 15px;
     font-family:cursive;
+}
+.Hidden {
+    display: none;
+}
+#more {
+    color: #c3ebe6;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+#more:hover {
+    text-decoration: underline;
+}
+#more-content {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #6c8f80;
+    line-height: 1.6;
+}
+#more-content.Hidden {
+    display: none;
+}
+p {
+    font-size: 1em;
+    color: #555555;
+    line-height: 1.6; 
+    text-align: center;
+}
+#less {
+    color: #c3ebe6;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+button {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#less:hover {
+    text-decoration: underline;
+}
+#code {
+    background-color: #ff89e5;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    animation: move 1s infinite;
+}
+@keyframes move {
+    0% {background-color: #ff89e5;}
+    50% {background-color: #ff61c1;}
+    100% {background-color: #ff89e5;}
 }
