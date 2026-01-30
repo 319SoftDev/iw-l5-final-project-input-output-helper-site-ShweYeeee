@@ -1,0 +1,147 @@
+h1 {
+    font-size: 2.5em;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:cursive;
+}
+body {
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+a {
+    color: #00796b;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #004d40;
+}
+nav {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    margin: 0 10px;
+    font-weight: bold;
+}
+.page {
+    display: none;
+}
+.page.active {
+    display: block;
+}
+#home-page {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#about-page {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#flowers-page {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#bouquet-page {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contactus-page {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family:cursive;
+}
+.Hidden {
+    display: none;
+}
+#more {
+    color: #c3ebe6;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+#more:hover {
+    text-decoration: underline;
+}
+#more-content {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #6c8f80;
+    line-height: 1.6;
+}
+#more-content.Hidden {
+    display: none;
+}
+p {
+    font-size: 1em;
+    color: #555555;
+    line-height: 1.6; 
+    text-align: center;
+}
+#less {
+    color: #c3ebe6;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+button {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#less:hover {
+    text-decoration: underline;
+}
+#code {
+    background-color: #ff89e5;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    animation: move 1s infinite;
+}
+@keyframes move {
+    0% {background-color: #ff89e5;}
+    50% {background-color: #ff61c1;}
+    100% {background-color: #ff89e5;}
+}
