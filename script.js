@@ -60,7 +60,7 @@ contactus.addEventListener("click", function() {
 });
 
 // Show the home page by default
-showPage("home-page");
+showPage("about-page");
 
 const more= document.querySelector("#more");
 const moreContent= document.querySelector("#more-content");
