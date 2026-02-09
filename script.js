@@ -60,7 +60,7 @@ contactus.addEventListener("click", function() {
 });
 
 // Show the home page by default
-showPage("about-page");
+showPage("flowers-page");
 
 const more= document.querySelector("#more");
 const moreContent= document.querySelector("#more-content");
@@ -81,6 +81,8 @@ const closemsg = () => {
 }
 less.addEventListener("click", closemsg);
 
+
+// Plants page// 
 const birdsnest= document.querySelector("#birds-nest");
 const peaceLily= document.querySelector("#peace-lily");
 const snakePlant= document.querySelector("#snake-plant");
@@ -94,65 +96,178 @@ const philodendronPlant= document.querySelector("#philodendron-plant");
 const shoppingcart= document.querySelector("#shopping-cart");
 const totalAmt= document.querySelector("#total-span");
 
+let amtofbirdsnest = 0
+let amtofpeacelily = 0
+let amtofsnakeplant =0
+let amtofprayerplant =0 
+let amtofspiderplant =0
+let amtofzzplant = 0
+let amtofmonstera =0
+let amtoffiddleleaffig =0
+let amtofphilo = 0
+
 const addbirdsnest = () => {
-  shoppingcart.innerHTML += `<p> Birds Nest </p>`;
+  amtofbirdsnest +=1;
+  shoppingcart.innerHTML += `<p> Birds Nest </p> x${amtofbirdsnest}`;
 totalAmt.innerHTML = (parseFloat(totalAmt.innerHTML) + 25.00).toFixed(2);
 
 };
 birdsnest.addEventListener("click", addbirdsnest);
 
 const addpeacelily = () => {
-  shoppingcart.innerHTML += `<p> Peace Lily </p>`;
+  amtofpeacelily +=1;
+  shoppingcart.innerHTML += `<p> Peace Lily </p> x${amtofpeacelily}`;
 totalAmt.innerHTML = (parseFloat(totalAmt.innerHTML) + 30.00).toFixed(2);
 
 };
 peaceLily.addEventListener("click", addpeacelily);
 
 const addprayerPlant = () => {
-  shoppingcart.innerHTML += `<p> Prayer Plant </p>`;
+  amtofprayerplant +=1;
+  shoppingcart.innerHTML += `<p> Prayer Plant </p> x${amtofprayerplant}`;
 totalAmt.innerHTML = (parseFloat(totalAmt.innerHTML) + 18.00).toFixed(2);
 
 };
 prayerPlant.addEventListener("click", addprayerPlant);
 
 const addspiderPlant = () => {
-  shoppingcart.innerHTML += `<p> Spider Plant </p>`;
+amtofspiderplant +=1;
+  shoppingcart.innerHTML += `<p> Spider Plant </p> x${amtofspiderplant}`;
 totalAmt.innerHTML = (parseFloat(totalAmt.innerHTML) + 15.00).toFixed(2);
 
 };
 spiderPlant.addEventListener("click", addspiderPlant);
 
 const addzzPlant = () => {
-  shoppingcart.innerHTML += `<p> zz Plant </p>`;
+amtofzzplant +=1;
+  shoppingcart.innerHTML += `<p> zz Plant </p> x${amtofzzplant}`;
 totalAmt.innerHTML = (parseFloat(totalAmt.innerHTML) + 22.00).toFixed(2);
 
 };
 zzPlant.addEventListener("click", addzzPlant);
 
 const addmonsteraPlant = () => {
-  shoppingcart.innerHTML += `<p> monstera Plant </p>`;
+  amtofmonstera +=1;
+  shoppingcart.innerHTML += `<p> monstera Plant </p> x${amtofmonstera}`;
 totalAmt.innerHTML = (parseFloat(totalAmt.innerHTML) + 28.00).toFixed(2);
 
 };
 monsteraPlant.addEventListener("click", addmonsteraPlant);
 
 const addfiddleLeafFig = () => {
-  shoppingcart.innerHTML += `<p> fiddleLeaf Fig </p>`;
+  amtoffiddleleaffig +=1;
+  shoppingcart.innerHTML += `<p> fiddleLeaf Fig </p> x${amtoffiddleleaffig}`;
 totalAmt.innerHTML = (parseFloat(totalAmt.innerHTML) + 35.00).toFixed(2);
 
 };
 fiddleLeafFig.addEventListener("click", addfiddleLeafFig);
 
 const addsnakePlant = () => {
-  shoppingcart.innerHTML += `<p> Snake Plant </p>`;
+  amtofsnakeplant +=1;
+  shoppingcart.innerHTML += `<p> Snake Plant </p> x${amtofsnakeplant}`;
 totalAmt.innerHTML = (parseFloat(totalAmt.innerHTML) + 20.00).toFixed(2);
 
 };
 snakePlant.addEventListener("click", addsnakePlant);
 
+
+
+
 const addphilodendronPlant = () => {
-  shoppingcart.innerHTML += `<p> philodendron Plant </p>`;
+  
+  amtofphilo += 1;
+  shoppingcart.innerHTML += `<p> philodendron Plant </p> x${amtofphilo} ` ;
 totalAmt.innerHTML = (parseFloat(totalAmt.innerHTML) + 25.00).toFixed(2);
 
 };
 philodendronPlant.addEventListener("click", addphilodendronPlant);
+
+
+//flowers page//
+
+const innocence= document.querySelector("#innocence");
+const romantic= document.querySelector("#romantic");
+const summerSunset= document.querySelector("#summer-sunset");
+const lover= document.querySelector("#lover");
+const lilian= document.querySelector("#lilian");
+const solar= document.querySelector("#solar");
+const peachSola= document.querySelector("#peach-sola");
+const margret= document.querySelector("#margret");
+const rosaline = document.querySelector("#rosaline");
+
+const shoppingcart1= document.querySelector("#shopping-cart1");
+const totalAmt1= document.querySelector("#total-span1");
+
+let amtofinnocence = 0
+let amtofromantic = 0
+let amtofsummersunset =0
+let amtoflover =0
+let amtoflilian =0
+let amtofsolar = 0
+let amtofpeachsola =0
+let amtofmargret =0
+let amtofrosaline = 0
+
+const addinnocence = () => {
+  amtofinnocence +=1;
+  shoppingcart1.innerHTML += `<p> Innocence </p> x${amtofinnocence}`;
+totalAmt1.innerHTML = (parseFloat(totalAmt1.innerHTML) + 55.00).toFixed(2);
+};
+innocence.addEventListener("click", addinnocence);
+
+const addromantic = () => {
+  amtofromantic +=1;
+  shoppingcart1.innerHTML += `<p> Romantic </p> x${amtofromantic}`;
+totalAmt1.innerHTML = (parseFloat(totalAmt1.innerHTML) + 30.00).toFixed(2);
+}
+romantic.addEventListener("click", addromantic);
+
+const addsummerSunset = () => {
+  amtofsummersunset +=1;
+  shoppingcart1.innerHTML += `<p> Summer Sunset </p> x${amtofsummersunset}`;
+totalAmt1.innerHTML = (parseFloat(totalAmt1.innerHTML) + 60.00).toFixed(2);
+} 
+summerSunset.addEventListener("click", addsummerSunset);
+
+const addlover = () => {
+  amtoflover +=1;
+  shoppingcart1.innerHTML += `<p> Lover </p> x${amtoflover}`;
+totalAmt1.innerHTML = (parseFloat(totalAmt1.innerHTML) + 40.00).toFixed(2);
+}
+lover.addEventListener("click", addlover);
+
+const addlilian = () => {
+  amtoflilian +=1;
+  shoppingcart1.innerHTML += `<p> Lilian </p> x${amtoflilian}`;
+totalAmt1.innerHTML = (parseFloat(totalAmt1.innerHTML) + 52.00).toFixed(2);
+}
+lilian.addEventListener("click", addlilian);
+
+const addsolar = () => {
+  amtofsolar +=1;
+  shoppingcart1.innerHTML += `<p> Solar </p> x${amtofsolar}`;
+totalAmt1.innerHTML = (parseFloat(totalAmt1.innerHTML) + 35.00).toFixed(2);
+}
+solar.addEventListener("click", addsolar);
+
+const addpeachSola = () => {
+  amtofpeachsola +=1;
+  shoppingcart1.innerHTML += `<p> Peach Sola </p> x${amtofpeachsola}`;
+totalAmt1.innerHTML = (parseFloat(totalAmt1.innerHTML) + 45.00).toFixed(2);
+}
+peachSola.addEventListener("click", addpeachSola);
+
+const addmargret = () => {
+  amtofmargret +=1;
+  shoppingcart1.innerHTML += `<p> Margret </p> x${amtofmargret}`;
+totalAmt1.innerHTML = (parseFloat(totalAmt1.innerHTML) + 48.00).toFixed(2);
+}
+margret.addEventListener("click", addmargret);
+
+const addrosaline = () => {
+  amtofrosaline +=1;
+  shoppingcart1.innerHTML += `<p> Rosaline </p> x${amtofrosaline}`;
+totalAmt1.innerHTML = (parseFloat(totalAmt1.innerHTML) + 78.00).toFixed(2);
+}
+rosaline.addEventListener("click", addrosaline);
+

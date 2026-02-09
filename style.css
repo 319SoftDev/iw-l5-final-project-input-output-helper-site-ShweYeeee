@@ -208,3 +208,12 @@ padding: 5px;
   padding: 20px;
 }
 
+#shopping-cart1 {
+  background-color: #e1ebe4;
+  max-width: 600px;
+  min-height: 400px;
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
