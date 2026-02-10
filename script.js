@@ -60,7 +60,7 @@ contactus.addEventListener("click", function() {
 });
 
 // Show the home page by default
-showPage("flowers-page");
+showPage("home-page");
 
 const more= document.querySelector("#more");
 const moreContent= document.querySelector("#more-content");
@@ -270,4 +270,74 @@ const addrosaline = () => {
 totalAmt1.innerHTML = (parseFloat(totalAmt1.innerHTML) + 78.00).toFixed(2);
 }
 rosaline.addEventListener("click", addrosaline);
+
+
+// Bouquet page//
+const daisies = document.querySelector("#daisies");
+const hydrangeas = document.querySelector("#hydrangea");
+const lilies = document.querySelector("#lilies");
+const peonies = document.querySelector("#peonies");
+const sunflowers = document.querySelector("#sunflowers");
+const orchidblossums = document.querySelector("#orchid-blossums");
+const snapdragons = document.querySelector("#white-snapdragons");
+
+const shoppingcart2= document.querySelector("#shopping-cart2");
+const totalAmt2= document.querySelector("#total-span2");
+
+let amtofdaisies = 0
+let amtofhydrangeas = 0
+let amtoflilies =0
+let amtofpeonies =0 
+let amtofsunflowers =0
+let amtoforchidblossums = 0
+let amtofsnapdragons =0
+
+const adddaisies = () => {
+  amtofdaisies +=1;
+  shoppingcart2.innerHTML += `<p> Daisies </p> x${amtofdaisies}`;
+totalAmt2.innerHTML = (parseFloat(totalAmt2.innerHTML) + 40.00).toFixed(2);
+};
+daisies.addEventListener("click", adddaisies);
+
+const addhydrangeas = () => {
+  amtofhydrangeas +=1;
+  shoppingcart2.innerHTML += `<p> Hydrangeas </p> x${amtofhydrangeas}`;
+totalAmt2.innerHTML = (parseFloat(totalAmt2.innerHTML) + 50.00).toFixed(2);
+}
+hydrangeas.addEventListener("click", addhydrangeas);
+
+const addlilies = () => {
+  amtoflilies +=1;
+  shoppingcart2.innerHTML += `<p> Lilies </p> x${amtoflilies}`;
+totalAmt2.innerHTML = (parseFloat(totalAmt2.innerHTML) + 45.00).toFixed(2);
+}
+lilies.addEventListener("click", addlilies);
+
+const addpeonies = () => {
+  amtofpeonies +=1;
+  shoppingcart2.innerHTML += `<p> Peonies </p> x${amtofpeonies}`;
+totalAmt2.innerHTML = (parseFloat(totalAmt2.innerHTML) + 60.00).toFixed(2);
+}
+peonies.addEventListener("click", addpeonies);
+
+const addsunflowers = () => {
+  amtofsunflowers +=1;
+  shoppingcart2.innerHTML += `<p> Sunflowers </p> x${amtofsunflowers}`;
+totalAmt2.innerHTML = (parseFloat(totalAmt2.innerHTML) + 35.00).toFixed(2);
+}
+sunflowers.addEventListener("click", addsunflowers);
+
+const addorchidblossums = () => {
+  amtoforchidblossums +=1;
+  shoppingcart2.innerHTML += `<p> Orchid Blossums </p> x${amtoforchidblossums}`;
+totalAmt2.innerHTML = (parseFloat(totalAmt2.innerHTML) + 70.00).toFixed(2);
+}
+orchidblossums.addEventListener("click", addorchidblossums);
+
+const addsnapdragons = () => {
+  amtofsnapdragons +=1;
+  shoppingcart2.innerHTML += `<p> White Snapdragons </p> x${amtofsnapdragons}`;
+totalAmt2.innerHTML = (parseFloat(totalAmt2.innerHTML) + 55.00).toFixed(2);
+}
+snapdragons.addEventListener("click", addsnapdragons);
 
